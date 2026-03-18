@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
-import { transform } from "motion";
 import { Projects } from "@/components";
 import { Mail, Twitter, Github, Send, MessageSquare } from "lucide-react";
 
