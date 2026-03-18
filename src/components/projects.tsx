@@ -92,17 +92,19 @@ const Projects = () => {
 
           return (
             <div key={i} className={`flex flex-col group ${gridClasses}`}>
-              <a 
-                href={project.url} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className={`block relative overflow-hidden bg-foreground/5 mb-4 ${aspectClass}`}
-              >
-                <img
-                  src={project.img}
-                  alt={project.title}
-                  className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 ease-out"
-                />
+              <div className={`relative overflow-hidden bg-foreground/5 mb-4 ${aspectClass}`}>
+                <a 
+                  href={project.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block w-full h-full"
+                >
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 ease-out"
+                  />
+                </a>
                 
                 {/* Discrete links on top-right */}
                 <div className="absolute top-4 right-4 flex gap-2 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
@@ -113,7 +115,7 @@ const Projects = () => {
                     <ExternalLink size={16} />
                   </a>
                 </div>
-              </a>
+              </div>
 
               <div className="flex flex-col space-y-1">
                 <h3 className="text-xl font-bold font-syne text-white/90 group-hover:text-white transition-colors duration-300">
