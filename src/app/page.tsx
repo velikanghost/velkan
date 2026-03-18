@@ -53,24 +53,57 @@ const ThankYou = () => (
 const PageContent = ({ isClone = false }: { isClone?: boolean }) => (
   <div className="content flex flex-col">
     <section className="scroll-section transition-all duration-300 ease-out will-change-transform">
-      <div id={isClone ? undefined : "about"} className="container mx-auto min-h-dvh flex flex-col justify-center">
-        <div className="about max-w-4xl text-left pt-20">
-          <h2 className="font-protest-strike text-foreground text-[68px] leading-tight">
-            Hi, I'm Velkan
-          </h2>
-          <h3 className="font-protest-strike text-foreground text-[92px] leading-none mb-6">
-            Fullstack & Blockchain Developer
-          </h3>
-          <p className="font-syne text-foreground/80 text-[24px] leading-relaxed max-w-3xl">
-            Highly motivated FullStack Developer with hands-on experience in
-            building innovative web applications, APIs, and web3 solutions using
-            modern technologies like TypeScript, Next.js, Tailwind CSS and Nest.js.
-            Proven expertise in frontend and backend development across various
-            domains, including Healthcare, Human Resource, Web3, and E-commerce,
-            with a focus on user-centric design and scalable architecture.
-          </p>
+        <div id={isClone ? undefined : "about"} className="container mx-auto min-h-dvh flex flex-col justify-center relative">
+          <div className="about max-w-4xl text-left pt-20">
+            <h2 className="font-protest-strike text-foreground text-[68px] leading-tight transition-all duration-700 ease-out">
+              Hi, I'm Velkan
+            </h2>
+            <h3 className="font-protest-strike text-foreground text-[92px] leading-none mb-6">
+              Fullstack & Blockchain Developer
+            </h3>
+            <p className="font-syne text-foreground/80 text-[24px] leading-relaxed max-w-3xl">
+              Highly motivated FullStack Developer with hands-on experience in
+              building innovative web applications, APIs, and web3 solutions using
+              modern technologies like TypeScript, Next.js, Tailwind CSS and Nest.js.
+              Proven expertise in frontend and backend development across various
+              domains, including Healthcare, Human Resource, Web3, and E-commerce,
+              with a focus on user-centric design and scalable architecture.
+            </p>
+          </div>
+
+         
+            <div className="hidden lg:flex absolute right-14 bottom-24 flex-col items-end pointer-events-auto">
+              {/* Row 1: 2 icons (Mail, X) */}
+              <div className="flex">
+                {socials.slice(0, 2).map((social, i) => (
+                  <a
+                    key={i}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-14 h-14 flex items-center justify-center bg-foreground text-background transition-all duration-300 hover:scale-110 shadow-xl border border-background/10 ${social.color}`}
+                  >
+                    <social.icon size={22} />
+                  </a>
+                ))}
+              </div>
+              {/* Row 2: 3 icons (Discord, GitHub, Telegram) */}
+              <div className="flex">
+                {socials.slice(2, 5).map((social, i) => (
+                  <a
+                    key={i + 2}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-14 h-14 flex items-center justify-center bg-foreground text-background transition-all duration-300 hover:scale-110 shadow-xl border border-background/10 ${social.color}`}
+                  >
+                    <social.icon size={22} />
+                  </a>
+                ))}
+              </div>
+            </div>
+          
         </div>
-      </div>
     </section>
 
     <section className="scroll-section transition-all duration-300 ease-out will-change-transform">
