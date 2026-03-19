@@ -94,7 +94,7 @@ const PageContent = ({ isClone = false }: { isClone?: boolean }) => (
 
          
             <div className="hidden lg:flex absolute right-28 bottom-24 flex-col items-end pointer-events-auto">
-              {/* Row 1: 1 icons (Mail, X) */}
+              
               <div className="flex">
                 {socials.slice(0, 1).map((social, i) => (
                   <SocialLink 
@@ -104,7 +104,6 @@ const PageContent = ({ isClone = false }: { isClone?: boolean }) => (
                   />
                 ))}
               </div>
-              {/* Row 2: 2 icons (Mail, X) */}
               <div className="flex">
                 {socials.slice(1, 3).map((social, i) => (
                   <SocialLink 
@@ -114,7 +113,6 @@ const PageContent = ({ isClone = false }: { isClone?: boolean }) => (
                   />
                 ))}
               </div>
-              {/* Row 3: 3 icons (Discord, GitHub, Telegram) */}
               <div className="flex">
                 {socials.slice(3, 6).map((social, i) => (
                   <SocialLink 

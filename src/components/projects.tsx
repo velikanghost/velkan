@@ -128,11 +128,21 @@ const Projects = () => {
                 </a>
                 
                 {/* Discrete links on top-right */}
-                <div className="absolute top-4 right-4 flex gap-2 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md border border-white/10 text-white">
+                <div className="absolute top-4 right-4 flex gap-2 md:translate-y-2 opacity-100 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 z-10">
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="p-2 bg-black/20 hover:bg-black/40 rounded-full backdrop-blur-md border border-white/10 text-white shadow-lg"
+                  >
                     <Github size={16} />
                   </a>
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md border border-white/10 text-white">
+                  <a 
+                    href={project.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="p-2 bg-black/20 hover:bg-black/40 rounded-full backdrop-blur-md border border-white/10 text-white shadow-lg"
+                  >
                     <ExternalLink size={16} />
                   </a>
                 </div>
@@ -145,7 +155,7 @@ const Projects = () => {
                 <p className="text-[10px] uppercase font-bold tracking-[0.2em] text-foreground/40 font-syne">
                   {project.stack.join(" / ")}
                 </p>
-                <p className="max-h-0 opacity-0 group-hover:max-h-24 group-hover:opacity-100 transition-all duration-700 text-xs font-syne text-foreground/50 overflow-hidden leading-relaxed pt-1">
+                <p className="opacity-100 md:max-h-0 md:opacity-0 md:group-hover:max-h-24 md:group-hover:opacity-100 transition-all duration-700 text-xs font-syne text-foreground/50 overflow-hidden leading-relaxed pt-1">
                   {project.description}
                 </p>
               </div>
