@@ -3,81 +3,89 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     title: "Monshape",
-    stack: ["Next.js", "Tailwind CSS", "Prisma"],
-    description: "A community-focused platform for coordinating local environmental initiatives and sustainability tracking.",
-    img: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09",
-    url: "https://monshape.com",
-    github: "https://github.com/velikanghost/monshape",
+    stack: ["Next.js", "Wagmi", "Zustand", "React Query", "Framer Motion"],
+    description: "Official project portal for Monshape on Monad, featuring secure wallet integration, an eligibility checker, and community campaign tracking.",
+    img: "/images/monshape.png",
+    url: "https://checker.monshape.club",
+    github: "#",
   },
   {
     title: "Firespot",
-    stack: ["Solidity", "TypeScript", "Ethers.js"],
-    description: "A blockchain security audit tool that uses AI to detect common vulnerabilities in smart contracts.",
-    img: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0",
-    url: "https://firespot.app",
-    github: "https://github.com/velkanghost/firespot",
+    stack: ["Next.js", "NestJS", "Zustand", "Redux Toolkit", "React Query"],
+    description: "Comprehensive QR payment ecosystem with merchant dashboards, real-time analytics, and instant bank transfer settlement.",
+    img: "/images/firespot.png",
+    url: "https://lite.firespot.co",
+    github: "#",
+  },
+  {
+    title: "Rebalancr",
+    stack: ["Next.js", "Mantine", "Redux Toolkit", "Privy", "Allora AI", "Kuru DEX"],
+    description: "AI-powered portfolio rebalancing protocol built natively for Monad, leveraging Allora for predictive analytics and Kuru DEX for deep liquidity execution.",
+    img: "/images/rebalancr.png",
+    url: "https://rebalancr-nu.vercel.app",
+    github: "https://github.com/velikanghost/rebalancr",
   },
   {
     title: "Blonks",
-    stack: ["React", "NestJS", "OpenAI"],
-    description: "AI-driven recruiting platform that automates resume screening and initial behavioral analysis.",
-    img: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf",
-    url: "https://blonks.com",
-    github: "https://github.com/velkanghost/blonks",
-  },
-  {
-    title: "Riskon",
-    stack: ["Next.js", "Zustand", "PostgreSQL"],
-    description: "Integrated health tracking system for clinics to manage patient vitals and telehealth schedules.",
-    img: "https://images.unsplash.com/photo-1532103054090-3491f1a05d0d",
-    url: "https://riskon.com",
-    github: "https://github.com/velkanghost/riskon",
+    stack: ["Next.js", "Solidity", "Foundry", "Wagmi", "React Query"],
+    description: "On-chain generative art project on Monad, featuring evolving ASCII portraits deterministically generated from wallet addresses.",
+    img: "/images/blonks.mp4",
+    url: "https://blonks.vercel.app/gallery",
+    github: "https://github.com/velikanghost/blonks",
   },
   {
     title: "Kairos",
-    stack: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    description: "Premium personal portfolio with dynamic grids, container queries, and sleek animations.",
-    img: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e",
-    url: "https://kairos.velkan.dev",
-    github: "https://github.com/velkanghost/kairos",
+    stack: ["Next.js", "NestJS", "Envio", "Prisma", "Wagmi"],
+    description: "Automated DCA trading bot leveraging MetaMask Advanced Permissions for secure, non-custodial strategy execution.",
+    img: "/images/kairos.png",
+    url: "https://kairos-frontend-weld.vercel.app",
+    github: "https://github.com/velikanghost/kairos",
   },
   {
-    title: "Monvoyage",
-    stack: ["TypeScript", "NestJS", "CommerceJS"],
-    description: "A high-performance headless e-commerce frontend with ultra-fast sub-second page loads.",
-    img: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62",
-    url: "https://monvoyage.com",
-    github: "https://github.com/velkanghost/monvoyage",
+    title: "Riskon",
+    stack: ["Next.js", "Redux Toolkit", "Wagmi", "React Query", "Solidity"],
+    description: "High-speed prediction markets with 3-minute rounds and fixed-odds payouts for automated on-chain price forecasting.",
+    img: "https://placehold.co/600x400?text=Riskon",
+    url: "#",
+    github: "https://github.com/velikanghost/riskon",
   },
   {
     title: "Covus",
-    stack: ["TypeScript", "NestJS", "CommerceJS"],
-    description: "A high-performance headless e-commerce frontend with ultra-fast sub-second page loads.",
-    img: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62",
-    url: "https://covus.app",
-    github: "https://github.com/velkanghost/covus",
-  },
-    {
-    title: "Farcaster Starter Kit",
-    stack: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    description: "Premium personal portfolio with dynamic grids, container queries, and sleek animations.",
-    img: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e",
-    url: "https://farcaster.velkan.dev",
-    github: "https://github.com/velkanghost/farcaster-starter-kit",
+    stack: ["Solidity", "Hardhat", "Next.js", "Wagmi", "Scaffold-ETH 2"],
+    description: "ERC-4626 compliant liquid staking protocol for STT tokens, featuring instant withdrawals and FIFO queue mechanics.",
+    img: "/images/covus.png",
+    url: "https://covus-beige.vercel.app",
+    github: "https://github.com/velikanghost/covus",
   },
   {
-    title: "MonCrush",
-    stack: ["TypeScript", "NestJS", "CommerceJS"],
-    description: "A high-performance headless e-commerce frontend with ultra-fast sub-second page loads.",
-    img: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62",
-    url: "https://moncrush.com",
-    github: "https://github.com/velkanghost/moncrush",
+    title: "Farcaster Mini App Starter Kit",
+    stack: ["Next.js", "Farcaster SDK", "Foundry", "Wagmi", "Scaffold-ETH 2"],
+    description: "Foundational toolkit for developing social-integrated dApps and Farcaster Mini-Apps with built-in JFS verification.",
+    img: "/images/fma.png",
+    url: "https://farcaster.xyz/miniapps/QtQlOp2K7E_d/mini-app-starter",
+    github: "https://github.com/velikanghost/se2-farcaster-miniapp-starter",
+  },
+  {
+    title: "Monvoyage",
+    stack: ["Vite", "Three.js", "GSAP", "Zustand", "Tailwind CSS 4"],
+    description: "Immersive 3D visualization platform showcasing the Monad ecosystem through interactive particle systems and flocking simulations.",
+    img: "/images/monvayage.mov",
+    url: "https://monvoyage.vercel.app",
+    github: "https://github.com/velikanghost/monvoyage",
+  },
+  {
+    title: "Shapeup",
+    stack: ["NestJS", "Prisma", "Solidity", "Foundry", "Twitter API"],
+    description: "Scalable backend engine for signature-verified minting and campaign achievement tracking for Web3 applications.",
+    img: "/images/shapeup.png",
+    url: "#",
+    github: "#",
   },
 ];
 
 const Projects = () => {
   return (
-    <section className="py-12">
+    <section className="pt-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
         {projects.map((project, i) => {
           const index = i + 1;
@@ -90,6 +98,8 @@ const Projects = () => {
             aspectClass = "aspect-[3/4]";
           }
 
+          const isVideo = project.img.endsWith('.mp4') || project.img.endsWith('.mov');
+
           return (
             <div key={i} className={`flex flex-col group ${gridClasses}`}>
               <div className={`relative overflow-hidden bg-foreground/5 mb-4 ${aspectClass}`}>
@@ -99,11 +109,22 @@ const Projects = () => {
                   rel="noopener noreferrer" 
                   className="block w-full h-full"
                 >
-                  <img
-                    src={project.img}
-                    alt={project.title}
-                    className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 ease-out"
-                  />
+                  {isVideo ? (
+                    <video
+                      src={project.img}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover brightness-90 group-hover:brightness-100 transition-all duration-700 ease-out"
+                    />
+                  ) : (
+                    <img
+                      src={project.img}
+                      alt={project.title}
+                      className="w-full h-full object-cover brightness-90 group-hover:brightness-100 transition-all duration-700 ease-out"
+                    />
+                  )}
                 </a>
                 
                 {/* Discrete links on top-right */}
