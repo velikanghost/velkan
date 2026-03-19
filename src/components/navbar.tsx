@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { User, LayoutGrid, MessageSquare, FileText } from "lucide-react";
+import { User, LayoutGrid, MessageSquare, FileText, Cpu } from "lucide-react";
 
 const Navbar = () => {
   const navItems = [
     { icon: User, label: "About", href: "#about" },
+    { icon: Cpu, label: "Skills", href: "#skills" },
     { icon: LayoutGrid, label: "Projects", href: "#projects" },
-    { icon: FileText, label: "Skills", href: "#skills" },
     { icon: MessageSquare, label: "Contact", href: "#contact" },
   ];
 
